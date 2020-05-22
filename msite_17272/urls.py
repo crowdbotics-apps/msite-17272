@@ -48,6 +48,8 @@ urlpatterns = [
     path("wallet/", include("wallet.urls")),
     path("api/v1/", include("task_category.api.v1.urls")),
     path("task_category/", include("task_category.urls")),
+    path("api/v1/", include("event.api.v1.urls")),
+    path("event/", include("event.urls")),
 ]
 
 admin.site.site_header = "MSITE"
